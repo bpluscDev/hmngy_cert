@@ -40,7 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     /* Add a semi-transparent overlay to make text more readable over the background */
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .logo-section {
@@ -90,7 +90,7 @@ body {
     font-size: 11px;
     color: #7f8c8d;
     line-height: 1.4;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
     font-style: italic;
 }
 
@@ -136,4 +136,9 @@ body {
     height: 2px;
     background: linear-gradient(90deg, transparent, #d4af37, transparent);
     margin: 6px auto;
+}
+
+/* Styles for ThinkerLab Image Tags */
+.logo-thinkerlab {
+    height: 67px;
 }

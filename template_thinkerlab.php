@@ -22,7 +22,7 @@ $completion_date = date("F Y", strtotime($certificate['fecha_inicio']));
     <div class="diploma">
         <div class="content">
             <div class="logo-section">
-                <img src="images/logo-thinkerlab.png" alt="ThinkerLab Logo" class="logo-gci2">
+                <img src="images/logo-thinkerlab.png" alt="ThinkerLab Logo" class="logo-thinkerlab">
             </div>
 
             <div class="diploma-title">DIPLOMA</div>
