@@ -39,12 +39,19 @@ $result = $conn->query($sql);
                         <a href="edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">Edit</a>
                         <a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this certificate?')">Delete</a>
                         <a href="generate_certificate.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info" target="_blank">Generate</a>
-                        <a href="validate.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-success" target="_blank">Validate</a>
-                        <a href="generate_qr.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">Generate QR</a>
                         <?php
-                        $qr_file_path = 'images/qr/' . $row['id'] . '.jpg';
-                        if (file_exists($qr_file_path)) {
-                            echo '<a href="' . $qr_file_path . '" class="btn btn-sm btn-secondary" download="qr_certificate_' . $row['id'] . '.jpg">Download QR</a>';
+                        // Show validation and QR buttons only for the Humanergy template
+                        if (isset($row['template_type']) && $row['template_type'] === 'humanergy') {
+                        ?>
+                            <a href="validate.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-success" target="_blank">Validate</a>
+                            <a href="generate_qr.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">Generate QR</a>
+                            <?php
+                            $qr_file_path = 'images/qr/' . $row['id'] . '.jpg';
+                            if (file_exists($qr_file_path)) {
+                                echo '<a href="' . $qr_file_path . '" class="btn btn-sm btn-secondary" download="qr_certificate_' . $row['id'] . '.jpg">Download QR</a>';
+                            }
+                            ?>
+                        <?php
                         }
                         ?>
                     </td>
