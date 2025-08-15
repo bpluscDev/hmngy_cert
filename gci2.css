@@ -50,7 +50,7 @@ body {
     color: #4a90e2;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 22px;
     letter-spacing: 3px;
     margin-bottom: 25px;
     border-top: 1px solid #4a90e2;
@@ -61,7 +61,7 @@ body {
 
 .recipient-name {
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
     color: #2c5aa0;
     margin-bottom: 25px;
@@ -71,7 +71,7 @@ body {
 
 .completion-text {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     color: #666;
     margin-bottom: 8px;
     font-family: 'Times New Roman', serif;
@@ -80,7 +80,7 @@ body {
 
 .course-title {
     text-align: center;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 400;
     color: #2c5aa0;
     margin-bottom: 25px;
@@ -90,7 +90,7 @@ body {
 
 .testimony-text {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     color: #666;
     margin-bottom: 40px;
     font-family: 'Times New Roman', serif;
@@ -132,7 +132,7 @@ body {
 }
 
 .signature-text {
-    font-size: 13px;
+    font-size: 10px;
     color: #666;
     font-weight: 600;
     letter-spacing: 1px;
@@ -153,7 +153,7 @@ body {
 
 /* Styles for GCI-2 Image Tags */
 .logo-gci2 {
-    height: 112px;
+    height: 101px;
 }
 .qr-gci2, .seal-gci2 {
     width: 80px;
