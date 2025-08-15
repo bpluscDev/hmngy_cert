@@ -21,7 +21,6 @@ $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
             </div>
         </div>
 
-        <div class="separator"></div>
 
         <div class="this-is-to-certify">esto es para certificar que</div>
 

@@ -39,11 +39,6 @@ body {
     margin-bottom: 20px;
 }
 
-.separator {
-    height: 1px;
-    background: #ddd;
-    margin: 25px 0;
-}
 
 .this-is-to-certify {
     text-align: center;
@@ -52,6 +47,7 @@ body {
     font-weight: 300;
     font-size: 22px;
     letter-spacing: 3px;
+    text-transform: uppercase;
     margin-bottom: 25px;
     border-top: 1px solid #4a90e2;
     border-bottom: 1px solid #4a90e2;
