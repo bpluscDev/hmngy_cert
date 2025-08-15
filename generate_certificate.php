@@ -29,6 +29,8 @@ if (!$certificate) {
 // Format dates for display
 $start_date_formatted = date("d F Y", strtotime($certificate['fecha_inicio']));
 $end_date_formatted = date("d F Y", strtotime($certificate['fecha_fin']));
+$recognition_date = date("F Y", strtotime($certificate['fecha_inicio']));
+$recognition_text = "In recognition of their amazing performance and great efforts during the month of " . $recognition_date . ".";
 
 ?>
 <!DOCTYPE html>
@@ -65,7 +67,7 @@ $end_date_formatted = date("d F Y", strtotime($certificate['fecha_fin']));
 
             <!-- Texto de reconocimiento -->
             <div class="recognition-text">
-                <p id="recognition-text">In recognition of her amazing performance and great efforts during the month of January 2024.</p>
+                <p id="recognition-text"><?php echo $recognition_text; ?></p>
             </div>
 
             <!-- Footer con información -->

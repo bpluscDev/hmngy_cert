@@ -48,7 +48,7 @@ body {
 }
 
 .logo {
-    width: 120px;
+    width: 162px;
     height: auto;
 }
 
@@ -62,7 +62,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 64px;
     color: #000;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -94,7 +94,7 @@ body {
 }
 
 .underline {
-    width: 100%;
+    width: 80%;
     height: 2px;
     background-color: #000;
     margin: 0 auto;
@@ -156,8 +156,8 @@ body {
 }
 
 .official-seal {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
 }
 
