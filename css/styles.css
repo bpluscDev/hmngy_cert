@@ -35,9 +35,9 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 60px;
+    width: 80px;
     height: 100%;
-    background: linear-gradient(180deg, #2196F3 0%, #1976D2 100%);
+    background: linear-gradient(180deg, #0D47A1 0%, #2196F3 100%);
 }
 
 /* Header con logo */
@@ -118,9 +118,9 @@ body {
 /* Footer del certificado */
 .certificate-footer {
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     left: 0;
-    right: 60px; /* Espacio para la banda azul */
+    right: 80px; /* Espacio para la banda azul */
     padding: 0 60px;
 }
 
@@ -164,8 +164,8 @@ body {
 /* QR Code */
 .qr-section {
     position: absolute;
-    bottom: 40px;
-    right: 80px;
+    bottom: 60px;
+    right: 100px;
 }
 
 .qr-dummy {
