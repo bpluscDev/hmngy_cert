@@ -88,6 +88,12 @@ require_once 'templates/header.php';
                 GCI-2
             </label>
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="template_type" id="template_thinkerlab" value="thethinkerlab">
+            <label class="form-check-label" for="template_thinkerlab">
+                The Thinker Lab
+            </label>
+        </div>
     </div>
     <button type="submit" class="btn btn-primary">Add Certificate</button>
 </form>
