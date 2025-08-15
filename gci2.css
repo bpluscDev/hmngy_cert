@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@700&family=Times+New+Roman&display=swap');
 
 * {
     margin: 0;
@@ -48,10 +48,15 @@ body {
 .this-is-to-certify {
     text-align: center;
     color: #4a90e2;
-    font-size: 18px;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
     letter-spacing: 3px;
     margin-bottom: 25px;
+    border-top: 1px solid #4a90e2;
+    border-bottom: 1px solid #4a90e2;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .recipient-name {
@@ -61,30 +66,34 @@ body {
     color: #2c5aa0;
     margin-bottom: 25px;
     letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
 }
 
 .completion-text {
     text-align: center;
-    font-size: 12px;
+    font-size: 19px;
     color: #666;
     margin-bottom: 8px;
-    font-weight: 500;
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
 }
 
 .course-title {
     text-align: center;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 29px;
+    font-weight: 400;
     color: #2c5aa0;
     margin-bottom: 25px;
     line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .testimony-text {
     text-align: center;
-    font-size: 11px;
+    font-size: 19px;
     color: #666;
     margin-bottom: 40px;
+    font-family: 'Times New Roman', serif;
     font-weight: 400;
 }
 
@@ -123,10 +132,11 @@ body {
 }
 
 .signature-text {
-    font-size: 11px;
+    font-size: 16px;
     color: #666;
     font-weight: 600;
     letter-spacing: 1px;
+    font-family: 'Times New Roman', serif;
 }
 
 

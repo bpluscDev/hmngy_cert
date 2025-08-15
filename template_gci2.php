@@ -23,7 +23,7 @@ $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
 
         <div class="separator"></div>
 
-        <div class="this-is-to-certify">ESTO ES PARA CERTIFICAR QUE</div>
+        <div class="this-is-to-certify">esto es para certificar que</div>
 
         <div class="recipient-name"><?php echo htmlspecialchars($certificate['nombre_completo']); ?></div>
 
