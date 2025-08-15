@@ -113,7 +113,7 @@ body {
 .signature {
     width: 200px;
     height: 60px;
-    margin: 0 auto 10px;
+    margin: 0 auto 4px;
     position: relative;
 }
 
@@ -152,6 +152,10 @@ body {
     height: 101px;
 }
 .qr-gci2, .seal-gci2 {
-    width: 80px;
-    height: 80px;
+    width: 88px;
+    height: 88px;
+}
+.signature-img-gci2 {
+    max-height: 50px;
+    margin-bottom: -5px; /* Adjust to overlap with the line slightly if needed */
 }

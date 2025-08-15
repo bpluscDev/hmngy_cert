@@ -45,6 +45,7 @@ $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
 
             <div class="signature-section">
                 <div class="signature">
+                    <img src="images/firma-gci2.png" alt="Firma" class="signature-img-gci2">
                     <div class="signature-line"></div>
                 </div>
                 <div class="signature-text">DIRECTOR DE CERTIFICACIÓN</div>
