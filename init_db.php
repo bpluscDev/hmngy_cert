@@ -47,7 +47,8 @@ $sql = "CREATE TABLE IF NOT EXISTS certificates (
     nombre_empresa VARCHAR(255) NOT NULL,
     nombre_certificacion VARCHAR(255) NOT NULL,
     fecha_inicio DATE NOT NULL,
-    fecha_fin DATE NOT NULL
+    fecha_fin DATE NOT NULL,
+    template_type VARCHAR(50) NOT NULL DEFAULT 'humanergy'
 )";
 
 if ($conn->query($sql) === TRUE) {
