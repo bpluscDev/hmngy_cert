@@ -38,6 +38,7 @@ $result = $conn->query($sql);
                     <td>
                         <a href="edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">Edit</a>
                         <a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this certificate?')">Delete</a>
+                        <a href="generate_certificate.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info" target="_blank">Generate</a>
                     </td>
                 </tr>
             <?php endwhile; ?>
