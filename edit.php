@@ -87,6 +87,12 @@ require_once 'templates/header.php';
                 GCI-1
             </label>
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="template_type" id="template_gci2" value="gci-2" <?php echo (isset($certificate['template_type']) && $certificate['template_type'] === 'gci-2') ? 'checked' : ''; ?>>
+            <label class="form-check-label" for="template_gci2">
+                GCI-2
+            </label>
+        </div>
     </div>
     <button type="submit" class="btn btn-primary">Update Certificate</button>
 </form>

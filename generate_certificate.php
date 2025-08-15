@@ -33,6 +33,8 @@ $template_type = isset($certificate['template_type']) ? $certificate['template_t
 
 if ($template_type === 'gci-1') {
     include 'template_gci1.php';
+} elseif ($template_type === 'gci-2') {
+    include 'template_gci2.php';
 } else {
     // Default to the Humanergy template
     include 'template_humanergy.php';
