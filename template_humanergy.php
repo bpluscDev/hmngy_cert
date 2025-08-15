@@ -31,7 +31,7 @@ $recognition_text = "In recognition of their amazing performance and great effor
             <!-- Título del certificado -->
             <div class="certificate-title">
                 <h1>CERTIFICACIÓN</h1>
-                <h2 class="subtitle">EN CIENCIA DE DATOS</h2>
+                <h2 class="subtitle"><?php echo htmlspecialchars($certificate['nombre_certificacion']); ?></h2>
             </div>
 
             <!-- Nombre del participante -->
