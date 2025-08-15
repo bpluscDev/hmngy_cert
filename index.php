@@ -20,6 +20,7 @@ $result = $conn->query($sql);
             <th>Full Name</th>
             <th>Company</th>
             <th>Certification</th>
+            <th>Ente Certificador</th>
             <th>Start Date</th>
             <th>End Date</th>
             <th>Actions</th>
@@ -33,6 +34,7 @@ $result = $conn->query($sql);
                     <td><?php echo $row['nombre_completo']; ?></td>
                     <td><?php echo $row['nombre_empresa']; ?></td>
                     <td><?php echo $row['nombre_certificacion']; ?></td>
+                    <td><?php echo htmlspecialchars($row['template_type']); ?></td>
                     <td><?php echo $row['fecha_inicio']; ?></td>
                     <td><?php echo $row['fecha_fin']; ?></td>
                     <td>
