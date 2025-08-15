@@ -58,7 +58,7 @@ $vigencia_text = $vigencia_inicio . " al " . $vigencia_fin;
     <!-- Black bar with logo -->
     <div style="background-color: #000000e1; padding: 10px 20px;">
         <a href="index.html">
-            <img src="assets/img/humanergy.png" width="150px" alt="">
+            <img src="images/logo-humanergy.png" width="150px" alt="Humanergy">
         </a>
     </div>
 
