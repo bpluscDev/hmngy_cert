@@ -40,7 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     /* Add a semi-transparent overlay to make text more readable over the background */
-    background: rgba(255, 255, 255, 0.85);
+    background: #fff;
 }
 
 .logo-section {
@@ -140,5 +140,5 @@ body {
 
 /* Styles for ThinkerLab Image Tags */
 .logo-thinkerlab {
-    height: 67px;
+    height: 77px;
 }
