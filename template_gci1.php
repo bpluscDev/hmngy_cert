@@ -26,9 +26,6 @@ $header_date_formatted = date("n/j/y, g:i a");
         <!-- Logo and Institute Name -->
         <div class="logo-section">
             <img src="images/logo-global.png" alt="Logo Global" class="logo-gci">
-            <div class="institute-name">GLOBAL</div>
-            <div class="certification-text">CERTIFICATION</div>
-            <div class="institute-text">INSTITUTE</div>
         </div>
 
         <!-- Course Title -->
