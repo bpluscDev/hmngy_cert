@@ -17,27 +17,7 @@ $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
     <div class="certificate">
         <div class="header">
             <div class="logo-container">
-                <div class="network-sphere">
-                    <div class="sphere"></div>
-                    <div class="network-dots">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="connection"></div>
-                        <div class="connection"></div>
-                        <div class="connection"></div>
-                    </div>
-                </div>
-                <div class="institute-name">
-                    <h1 class="global">GLOBAL</h1>
-                    <h1 class="certification">CERTIFICATION</h1>
-                    <h1 class="institute">INSTITUTE</h1>
-                </div>
+                <img src="images/logo-global.png" alt="Logo Global" class="logo-gci2">
             </div>
         </div>
 
@@ -62,9 +42,7 @@ $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
         </div>
 
         <div class="footer">
-            <div class="qr-code">
-                <div class="qr-pattern"></div>
-            </div>
+            <img src="images/qr-global.png" alt="QR Code" class="qr-gci2">
 
             <div class="signature-section">
                 <div class="signature">
@@ -73,11 +51,7 @@ $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
                 <div class="signature-text">DIRECTOR DE CERTIFICACIÓN</div>
             </div>
 
-            <div class="seal">
-                <div class="seal-inner">
-                    SELLO<br>OFICIAL
-                </div>
-            </div>
+            <img src="images/sello-global.png" alt="Sello Global" class="seal-gci2">
         </div>
 
         <div class="bottom-info">

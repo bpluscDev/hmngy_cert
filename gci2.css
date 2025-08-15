@@ -39,95 +39,6 @@ body {
     margin-bottom: 20px;
 }
 
-.network-sphere {
-    width: 80px;
-    height: 80px;
-    position: relative;
-}
-
-.sphere {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px solid #4a90e2;
-    position: relative;
-    background: radial-gradient(circle at 30% 30%, rgba(74, 144, 226, 0.2), rgba(74, 144, 226, 0.05));
-}
-
-.network-dots {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.dot {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: #4a90e2;
-    border-radius: 50%;
-}
-
-.dot:nth-child(1) { top: 20%; left: 30%; }
-.dot:nth-child(2) { top: 35%; left: 60%; }
-.dot:nth-child(3) { top: 50%; left: 25%; }
-.dot:nth-child(4) { top: 65%; left: 70%; }
-.dot:nth-child(5) { top: 80%; left: 45%; }
-.dot:nth-child(6) { top: 25%; left: 75%; }
-.dot:nth-child(7) { top: 45%; left: 50%; }
-.dot:nth-child(8) { top: 70%; left: 30%; }
-
-.connection {
-    position: absolute;
-    height: 1px;
-    background: #4a90e2;
-    opacity: 0.6;
-}
-
-.connection:nth-child(9) {
-    top: 22%; left: 32%;
-    width: 25px;
-    transform: rotate(45deg);
-}
-.connection:nth-child(10) {
-    top: 37%; left: 45%;
-    width: 20px;
-    transform: rotate(-30deg);
-}
-.connection:nth-child(11) {
-    top: 52%; left: 38%;
-    width: 18px;
-    transform: rotate(60deg);
-}
-
-.institute-name {
-    text-align: right;
-    margin-left: 10px;
-}
-
-.institute-name h1 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
-    line-height: 1.2;
-}
-
-.institute-name .global {
-    font-size: 32px;
-}
-
-.institute-name .certification {
-    font-size: 24px;
-    color: #666;
-}
-
-.institute-name .institute {
-    font-size: 20px;
-    color: #666;
-    font-weight: 400;
-}
-
 .separator {
     height: 1px;
     background: #ddd;
@@ -187,21 +98,6 @@ body {
     align-items: flex-end;
 }
 
-.qr-code {
-    width: 80px;
-    height: 80px;
-    background: #000;
-    position: relative;
-}
-
-.qr-pattern {
-    width: 100%;
-    height: 100%;
-    background-image:
-        repeating-linear-gradient(0deg, #000 0px, #000 3px, #fff 3px, #fff 6px),
-        repeating-linear-gradient(90deg, #000 0px, #000 3px, #fff 3px, #fff 6px);
-    background-size: 6px 6px;
-}
 
 .signature-section {
     text-align: center;
@@ -233,30 +129,6 @@ body {
     letter-spacing: 1px;
 }
 
-.seal {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #2c5aa0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.seal-inner {
-    width: 65px;
-    height: 65px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 8px;
-    text-align: center;
-    font-weight: 600;
-}
 
 .bottom-info {
     position: absolute;
@@ -267,4 +139,13 @@ body {
     justify-content: space-between;
     font-size: 9px;
     color: #666;
+}
+
+/* Styles for GCI-2 Image Tags */
+.logo-gci2 {
+    height: 80px;
+}
+.qr-gci2, .seal-gci2 {
+    width: 80px;
+    height: 80px;
 }
