@@ -17,10 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre_certificacion = $_POST['nombre_certificacion'];
     $fecha_inicio = $_POST['fecha_inicio'];
     $fecha_fin = $_POST['fecha_fin'];
+    $template_type = $_POST['template_type'];
 
-    $sql = "UPDATE certificates SET nombre_completo = ?, nombre_empresa = ?, nombre_certificacion = ?, fecha_inicio = ?, fecha_fin = ? WHERE id = ?";
+    $sql = "UPDATE certificates SET nombre_completo = ?, nombre_empresa = ?, nombre_certificacion = ?, fecha_inicio = ?, fecha_fin = ?, template_type = ? WHERE id = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssssi", $nombre_completo, $nombre_empresa, $nombre_certificacion, $fecha_inicio, $fecha_fin, $id);
+    $stmt->bind_param("ssssssi", $nombre_completo, $nombre_empresa, $nombre_certificacion, $fecha_inicio, $fecha_fin, $template_type, $id);
 
     if ($stmt->execute()) {
         header('Location: index.php');
@@ -71,6 +72,21 @@ require_once 'templates/header.php';
     <div class="mb-3">
         <label for="fecha_fin" class="form-label">End Date</label>
         <input type="date" class="form-control" id="fecha_fin" name="fecha_fin" value="<?php echo $certificate['fecha_fin']; ?>" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Ente certificador</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="template_type" id="template_humanergy" value="humanergy" <?php echo (isset($certificate['template_type']) && $certificate['template_type'] === 'humanergy') ? 'checked' : ''; ?>>
+            <label class="form-check-label" for="template_humanergy">
+                Humanergy
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="template_type" id="template_gci1" value="gci-1" <?php echo (isset($certificate['template_type']) && $certificate['template_type'] === 'gci-1') ? 'checked' : ''; ?>>
+            <label class="form-check-label" for="template_gci1">
+                GCI-1
+            </label>
+        </div>
     </div>
     <button type="submit" class="btn btn-primary">Update Certificate</button>
 </form>

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.certificate {
+    border: 2px solid #0072BC;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header img {
+    max-height: 80px;
+}
+.title {
+    color: #0072BC;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.certify {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.name {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.footer .qr img {
+    max-height: 100px;
+}
+.footer .signature {
+    text-align: center;
+}
+.footer .signature img {
+    max-height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+.footer .signature p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer .signature .name {
+    color: #0072BC;
+    font-weight: bold;
+}
+.footer .seal img {
+    max-height: 100px;
+}
+.id-cert {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.date {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 12px;
+}
