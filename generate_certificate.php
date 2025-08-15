@@ -90,8 +90,15 @@ $recognition_text = "In recognition of their amazing performance and great effor
             <!-- QR Code -->
             <div class="qr-section">
                 <div class="qr-dummy">
-                    <!-- Aquí irá el QR Code -->
-                    <div class="qr-placeholder"></div>
+                    <?php
+                    $qr_image_to_display = 'images/qr/' . $certificate['id'] . '.jpg';
+                    if (file_exists($qr_image_to_display)) {
+                        echo '<img src="' . $qr_image_to_display . '" alt="QR Code" style="width: 100%; height: 100%;">';
+                    } else {
+                        // Display the placeholder if the QR code has not been generated yet
+                        echo '<!-- Aquí irá el QR Code --><div class="qr-placeholder"></div>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
