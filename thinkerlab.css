@@ -40,7 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     /* Add a semi-transparent overlay to make text more readable over the background */
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 .logo-section {
@@ -50,34 +50,20 @@ body {
     margin-bottom: 30px;
 }
 
-.brand-text {
-    color: #2c5aa0;
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.brand-subtitle {
-    color: #4a90a4;
-    font-size: 10px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: -5px;
-}
 
 .diploma-title {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: 400;
     color: #2c3e50;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     letter-spacing: 3px;
 }
 
 .subtitle {
     font-size: 14px;
     color: #7f8c8d;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -86,7 +72,7 @@ body {
 .granted-to {
     font-size: 12px;
     color: #95a5a6;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-style: italic;
 }
 
@@ -96,7 +82,7 @@ body {
     font-weight: 400;
     color: #2c3e50;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     line-height: 1.2;
 }
 
@@ -104,7 +90,7 @@ body {
     font-size: 11px;
     color: #7f8c8d;
     line-height: 1.4;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     font-style: italic;
 }
 
@@ -149,5 +135,5 @@ body {
     width: 120px;
     height: 2px;
     background: linear-gradient(90deg, transparent, #d4af37, transparent);
-    margin: 10px auto;
+    margin: 6px auto;
 }
