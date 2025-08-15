@@ -118,7 +118,7 @@ body {
 /* Footer del certificado */
 .certificate-footer {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 0;
     right: 80px; /* Espacio para la banda azul */
     padding: 0 60px;
@@ -164,13 +164,13 @@ body {
 /* QR Code */
 .qr-section {
     position: absolute;
-    bottom: 60px;
-    right: 100px;
+    bottom: 80px;
+    right: -10px;
 }
 
 .qr-dummy {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
 }
 
 .qr-placeholder {
