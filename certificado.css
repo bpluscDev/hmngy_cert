@@ -141,13 +141,6 @@ body {
     margin: 0 30px;
 }
 
-.signature-line {
-    width: 180px;
-    height: 50px;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50"><path d="M5,35 Q30,15 60,30 Q90,45 120,25 Q150,35 175,30" stroke="%23000" stroke-width="2" fill="none"/></svg>') no-repeat center;
-    background-size: contain;
-    margin: 0 auto 8px auto;
-}
 
 .signatory-name {
     font-size: 11px;
@@ -164,10 +157,13 @@ body {
 
 
 .footer {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    right: 15px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 15px 12px 15px;
     font-size: 9px;
     color: #333;
     font-family: Arial, sans-serif;
@@ -207,11 +203,16 @@ body {
 }
 
 .qr-gci {
-    max-height: 94px;
-    width: 94px;
+    max-height: 118px;
+    width: 118px;
+}
+
+.signature-gci {
+    max-height: 50px;
+    margin: 0 auto 8px auto;
 }
 
 .seal-gci {
-    max-height: 94px;
-    width: 94px;
+    max-height: 118px;
+    width: 118px;
 }

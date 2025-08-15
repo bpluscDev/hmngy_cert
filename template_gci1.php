@@ -2,10 +2,11 @@
 // This file is the new template for the GCI-1 certificate.
 // It expects a $certificate variable to be available with the certificate data.
 
-// Format the end date
+// Format dates and parse course name
 $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
-// The header date seems static in the design, but we can make it dynamic if needed
-$header_date_formatted = date("n/j/y, g:i a");
+$course_name_parts = explode(' | ', $certificate['nombre_certificacion']);
+$header_course_name = trim($course_name_parts[0]);
+$header_start_date = date("n/j/y", strtotime($certificate['fecha_inicio']));
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,8 +20,8 @@ $header_date_formatted = date("n/j/y, g:i a");
     <div class="certificate-container">
         <!-- Header -->
         <div class="header">
-            <div class="header-left"><?php echo $header_date_formatted; ?></div>
-            <div class="header-right">Iberoamericano MM-11 Certificado</div>
+            <div class="header-left"><?php echo htmlspecialchars($header_course_name); ?></div>
+            <div class="header-right"><?php echo $header_start_date; ?></div>
         </div>
 
         <!-- Logo and Institute Name -->
@@ -30,12 +31,12 @@ $header_date_formatted = date("n/j/y, g:i a");
 
         <!-- Course Title -->
         <div class="course-title">
-            Iberoamericano MM-11 Certificado | <?php echo htmlspecialchars($certificate['nombre_certificacion']); ?>
+            <?php echo htmlspecialchars($certificate['nombre_certificacion']); ?>
         </div>
 
         <!-- Certification Section -->
         <div class="certify-section">
-            <div class="certify-text">THIS IS TO CERTIFY THAT</div>
+            <div class="certify-text">SE CERTIFICA QUE</div>
             <div class="recipient-name"><?php echo htmlspecialchars($certificate['nombre_completo']); ?></div>
         </div>
 
@@ -54,9 +55,9 @@ $header_date_formatted = date("n/j/y, g:i a");
             <img src="images/qr-global.png" alt="QR Code" class="qr-gci">
 
             <div class="signature-area">
-                <div class="signature-line"></div>
-                <div class="signatory-name">Jhon Doe</div>
-                <div class="signatory-title">Academic Director</div>
+                <img src="images/firma-global.png" alt="Firma" class="signature-gci">
+                <div class="signatory-name">James Carter</div>
+                <div class="signatory-title">Director Académico</div>
             </div>
 
             <img src="images/sello-global.png" alt="Sello Global" class="seal-gci">
