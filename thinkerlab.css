@@ -40,7 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     /* Add a semi-transparent overlay to make text more readable over the background */
-    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .logo-section {
