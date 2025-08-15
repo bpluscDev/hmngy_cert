@@ -13,7 +13,7 @@ $id = $_GET['id'];
 // --- QR Code Generation ---
 
 // 1. Set the data for the QR code (the validation URL)
-$validation_url = "https://humanergy.app/validate.php?id=" . urlencode($id);
+$validation_url = "https://certification.humanergy.app/validate.php?id=" . urlencode($id);
 
 // 2. Set the QR code API endpoint
 // We use api.qrserver.com, a free QR code generator API
