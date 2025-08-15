@@ -25,9 +25,7 @@ $header_date_formatted = date("n/j/y, g:i a");
 
         <!-- Logo and Institute Name -->
         <div class="logo-section">
-            <div class="logo-placeholder">
-                LOGO
-            </div>
+            <img src="images/logo-global.png" alt="Logo Global" class="logo-gci">
             <div class="institute-name">GLOBAL</div>
             <div class="certification-text">CERTIFICATION</div>
             <div class="institute-text">INSTITUTE</div>
@@ -56,7 +54,7 @@ $header_date_formatted = date("n/j/y, g:i a");
 
         <!-- Signature Section -->
         <div class="signature-section">
-            <div class="qr-placeholder"></div>
+            <img src="images/qr-global.png" alt="QR Code" class="qr-gci">
 
             <div class="signature-area">
                 <div class="signature-line"></div>
@@ -64,9 +62,7 @@ $header_date_formatted = date("n/j/y, g:i a");
                 <div class="signatory-title">Academic Director</div>
             </div>
 
-            <div class="seal-placeholder">
-                SEAL
-            </div>
+            <img src="images/sello-global.png" alt="Sello Global" class="seal-gci">
         </div>
 
         <!-- Footer -->
