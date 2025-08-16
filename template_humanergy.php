@@ -5,8 +5,14 @@
 // Format dates for display
 $start_date_formatted = date("d F Y", strtotime($certificate['fecha_inicio']));
 $end_date_formatted = date("d F Y", strtotime($certificate['fecha_fin']));
-$recognition_date = date("F Y", strtotime($certificate['fecha_inicio']));
-$recognition_text = "In recognition of their amazing performance and great efforts during the month of " . $recognition_date . ".";
+
+// Translate recognition text and month to Spanish
+$month_num = date("n", strtotime($certificate['fecha_inicio']));
+$year = date("Y", strtotime($certificate['fecha_inicio']));
+$meses = array("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre");
+$month_spanish = $meses[$month_num - 1];
+$recognition_date_spanish = $month_spanish . " de " . $year;
+$recognition_text = "En reconocimiento a su increíble desempeño y grandes esfuerzos durante el mes de " . $recognition_date_spanish . ".";
 ?>
 <!DOCTYPE html>
 <html lang="es">
