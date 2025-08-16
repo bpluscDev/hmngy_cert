@@ -7,9 +7,27 @@ require_once 'includes/db.php';
 require_once 'templates/header.php';
 
 // Fetch certificates from the database
+$search = isset($_GET['search']) ? $_GET['search'] : '';
 $sql = "SELECT * FROM certificates";
-$result = $conn->query($sql);
+if (!empty($search)) {
+    $sql .= " WHERE nombre_completo LIKE ?";
+}
+$stmt = $conn->prepare($sql);
+if (!empty($search)) {
+    $search_param = "%" . $search . "%";
+    $stmt->bind_param("s", $search_param);
+}
+$stmt->execute();
+$result = $stmt->get_result();
 ?>
+
+<!-- Search Form -->
+<form action="index.php" method="GET" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Buscar por nombre..." value="<?php echo isset($_GET['search']) ? htmlspecialchars($_GET['search']) : ''; ?>">
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+    </div>
+</form>
 
 <a href="create.php" class="btn btn-primary mb-3">Add Certificate</a>
 
