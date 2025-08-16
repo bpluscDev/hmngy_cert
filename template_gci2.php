@@ -22,13 +22,13 @@ $end_date_formatted = date("F j, Y", strtotime($certificate['fecha_fin']));
         </div>
 
 
-        <div class="this-is-to-certify">esto es para certificar que</div>
+        <div class="this-is-to-certify">CERTIFICAMOS QUE</div>
 
         <div class="recipient-name"><?php echo htmlspecialchars($certificate['nombre_completo']); ?></div>
 
         <div class="completion-text">
-            POR HABER COMPLETADO CON ÉXITO EL SEMINARIO EN PROCESOS DE RECURSOS HUMANOS Y NÓMINA,<br>
-            POR EL PRESENTE SE OTORGA ESTA CERTIFICACIÓN EN RECONOCIMIENTO AL LOGRO SOBRESALIENTE.
+            POR HABER COMPLETADO CON ÉXITO EL PRESENTE PROGRAMA DE CERTIFICACIÓN,<br>
+            POR TAL SE OTORGA ESTA CERTIFICACIÓN EN RECONOCIMIENTO AL LOGRO SOBRESALIENTE.
         </div>
 
         <div class="course-title">
