@@ -20,8 +20,12 @@ if ($needed_len > 0) {
     $auth_code_display = substr($auth_string_base64, 0, 255);
 }
 
-// For the "completion-text", we can try to make the date dynamic as well
-$completion_date = date("F Y", strtotime($certificate['fecha_inicio']));
+// Translate completion date month to Spanish
+$month_num = date("n", strtotime($certificate['fecha_inicio']));
+$year = date("Y", strtotime($certificate['fecha_inicio']));
+$meses = array("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre");
+$month_spanish = $meses[$month_num - 1];
+$completion_date = $month_spanish . " de " . $year;
 ?>
 <!DOCTYPE html>
 <html lang="es">
